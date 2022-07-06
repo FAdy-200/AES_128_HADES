@@ -1,0 +1,94 @@
+# hades.models.Design file
+#  
+[name] key_test
+[components]
+hades.models.rtlib.io.OpinVectorLarge i21 10200 15600 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge i20 10200 13800 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVector i9 12600 8400 @N 1001 8 00000010_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge W3 2400 2400 @N 1001 32 00001001110011110100111100111100_B 1.0E-8 1
+hades.models.rtlib.io.IpinVectorLarge W2 2400 3600 @N 1001 32 10101011111101110001010110001000_B 1.0E-8 1
+hades.models.rtlib.io.OpinVectorLarge i19 10200 12000 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVector i8 4800 8400 @N 1001 8 00000001_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge W1 2400 4800 @N 1001 32 00101000101011101101001010100110_B 1.0E-8 1
+hades.models.rtlib.io.OpinVectorLarge i18 10200 10200 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge i7 73200 6000 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge W0 2400 6000 @N 1001 32 00101011011111100001010100010110_B 1.0E-8 1
+hades.models.rtlib.io.IpinVector i17 65400 8400 @N 1001 8 00110110_B 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge i6 73200 4800 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVector i16 58800 8400 @N 1001 8 00011011_B 1.0E-8 1
+hades.models.rtlib.io.OpinVectorLarge i5 73200 3600 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVector i15 52200 8400 @N 1001 8 10000000_B 1.0E-8 1
+hades.models.rtlib.io.OpinVectorLarge i4 73200 2400 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVector i14 45600 8400 @N 1001 8 01000000_B 1.0E-9 1
+hades.models.rtlib.io.IpinVector i13 39000 8400 @N 1001 8 00100000_B 1.0E-9 1
+hades.models.rtlib.io.IpinVector i12 32400 8400 @N 1001 8 00010000_B 1.0E-9 1
+hades.models.Design key_exp_one_round 5400 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round9 65400 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.rtlib.io.IpinVector i11 25800 8400 @N 1001 8 00001000_B 1.0E-9 1
+hades.models.Design key_exp_one_round8 58800 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.rtlib.io.IpinVector i10 19200 8400 @N 1001 8 00000100_B 1.0E-9 1
+hades.models.Design key_exp_one_round7 52200 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round6 45600 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round5 39000 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round4 32400 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round3 25800 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round2 19200 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+hades.models.Design key_exp_one_round1 12600 2400 @N 1001 $TO_BE_REPLACED$key_exp_one_round.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n39 32 2 key_exp_one_round8 Wo0 key_exp_one_round9 Wi0 1 2 63600 4800 65400 4800 0 
+hades.signals.SignalStdLogicVector n38 32 2 key_exp_one_round8 Wo1 key_exp_one_round9 Wi1 1 2 63600 4200 65400 4200 0 
+hades.signals.SignalStdLogicVector n37 32 2 key_exp_one_round8 Wo2 key_exp_one_round9 Wi2 1 2 63600 3600 65400 3600 0 
+hades.signals.SignalStdLogicVector n36 32 2 key_exp_one_round8 Wo3 key_exp_one_round9 Wi3 1 2 63600 3000 65400 3000 0 
+hades.signals.SignalStdLogicVector n35 32 2 key_exp_one_round7 Wo0 key_exp_one_round8 Wi0 1 2 57000 4800 58800 4800 0 
+hades.signals.SignalStdLogicVector n34 32 2 key_exp_one_round7 Wo1 key_exp_one_round8 Wi1 1 2 57000 4200 58800 4200 0 
+hades.signals.SignalStdLogicVector n33 32 2 key_exp_one_round7 Wo2 key_exp_one_round8 Wi2 1 2 57000 3600 58800 3600 0 
+hades.signals.SignalStdLogicVector n32 32 2 key_exp_one_round7 Wo3 key_exp_one_round8 Wi3 1 2 57000 3000 58800 3000 0 
+hades.signals.SignalStdLogicVector n31 32 2 key_exp_one_round6 Wo0 key_exp_one_round7 Wi0 1 2 50400 4800 52200 4800 0 
+hades.signals.SignalStdLogicVector n30 32 2 key_exp_one_round6 Wo1 key_exp_one_round7 Wi1 1 2 50400 4200 52200 4200 0 
+hades.signals.SignalStdLogicVector n29 32 2 key_exp_one_round6 Wo2 key_exp_one_round7 Wi2 1 2 50400 3600 52200 3600 0 
+hades.signals.SignalStdLogicVector n28 32 2 key_exp_one_round6 Wo3 key_exp_one_round7 Wi3 1 2 50400 3000 52200 3000 0 
+hades.signals.SignalStdLogicVector n27 32 2 key_exp_one_round5 Wo0 key_exp_one_round6 Wi0 1 2 43800 4800 45600 4800 0 
+hades.signals.SignalStdLogicVector n26 32 2 key_exp_one_round5 Wo1 key_exp_one_round6 Wi1 1 2 43800 4200 45600 4200 0 
+hades.signals.SignalStdLogicVector n25 32 2 key_exp_one_round5 Wo2 key_exp_one_round6 Wi2 1 2 43800 3600 45600 3600 0 
+hades.signals.SignalStdLogicVector n24 32 2 key_exp_one_round5 Wo3 key_exp_one_round6 Wi3 1 2 43800 3000 45600 3000 0 
+hades.signals.SignalStdLogicVector n23 32 2 key_exp_one_round4 Wo0 key_exp_one_round5 Wi0 1 2 37200 4800 39000 4800 0 
+hades.signals.SignalStdLogicVector n22 32 2 key_exp_one_round4 Wo1 key_exp_one_round5 Wi1 1 2 37200 4200 39000 4200 0 
+hades.signals.SignalStdLogicVector n21 32 2 key_exp_one_round4 Wo2 key_exp_one_round5 Wi2 1 2 37200 3600 39000 3600 0 
+hades.signals.SignalStdLogicVector n53 8 2 i17 Y key_exp_one_round9 Round 1 2 65400 8400 65400 5400 0 
+hades.signals.SignalStdLogicVector n20 32 2 key_exp_one_round4 Wo3 key_exp_one_round5 Wi3 1 2 37200 3000 39000 3000 0 
+hades.signals.SignalStdLogicVector n52 8 2 i16 Y key_exp_one_round8 Round 1 2 58800 8400 58800 5400 0 
+hades.signals.SignalStdLogicVector n51 8 2 i15 Y key_exp_one_round7 Round 1 2 52200 8400 52200 5400 0 
+hades.signals.SignalStdLogicVector n50 8 2 i14 Y key_exp_one_round6 Round 1 2 45600 8400 45600 5400 0 
+hades.signals.SignalStdLogicVector n9 32 2 key_exp_one_round1 Wo2 key_exp_one_round2 Wi2 1 2 17400 3600 19200 3600 0 
+hades.signals.SignalStdLogicVector n8 32 2 key_exp_one_round1 Wo3 key_exp_one_round2 Wi3 1 2 17400 3000 19200 3000 0 
+hades.signals.SignalStdLogicVector n7 32 3 key_exp_one_round Wo0 key_exp_one_round1 Wi0 i21 A 2 2 10200 4800 12600 4800 2 10200 4800 10200 15600 1 10200 4800 
+hades.signals.SignalStdLogicVector n6 32 3 key_exp_one_round Wo1 key_exp_one_round1 Wi1 i20 A 2 2 10200 4200 12600 4200 2 10200 4200 10200 13800 1 10200 4200 
+hades.signals.SignalStdLogicVector n5 32 3 key_exp_one_round Wo2 key_exp_one_round1 Wi2 i19 A 2 2 10200 3600 12600 3600 2 10200 3600 10200 12000 1 10200 3600 
+hades.signals.SignalStdLogicVector n4 32 3 key_exp_one_round Wo3 key_exp_one_round1 Wi3 i18 A 3 2 10200 3000 12600 3000 2 10200 3000 10200 9600 2 10200 3000 10200 10200 1 10200 3000 
+hades.signals.SignalStdLogicVector n3 32 2 W0 Y key_exp_one_round Wi0 1 2 2400 6000 5400 4800 0 
+hades.signals.SignalStdLogicVector n2 32 2 W1 Y key_exp_one_round Wi1 1 2 2400 4800 5400 4200 0 
+hades.signals.SignalStdLogicVector n1 32 2 W2 Y key_exp_one_round Wi2 1 2 2400 3600 5400 3600 0 
+hades.signals.SignalStdLogicVector n0 32 2 W3 Y key_exp_one_round Wi3 1 2 2400 2400 5400 3000 0 
+hades.signals.SignalStdLogicVector n19 32 2 key_exp_one_round3 Wo0 key_exp_one_round4 Wi0 1 2 30600 4800 32400 4800 0 
+hades.signals.SignalStdLogicVector n18 32 2 key_exp_one_round3 Wo1 key_exp_one_round4 Wi1 1 2 30600 4200 32400 4200 0 
+hades.signals.SignalStdLogicVector n49 8 2 i13 Y key_exp_one_round5 Round 1 2 39000 8400 39000 5400 0 
+hades.signals.SignalStdLogicVector n17 32 2 key_exp_one_round3 Wo2 key_exp_one_round4 Wi2 1 2 30600 3600 32400 3600 0 
+hades.signals.SignalStdLogicVector n48 8 2 i12 Y key_exp_one_round4 Round 1 2 32400 8400 32400 5400 0 
+hades.signals.SignalStdLogicVector n16 32 2 key_exp_one_round1 Wo1 key_exp_one_round2 Wi1 1 2 17400 4200 19200 4200 0 
+hades.signals.SignalStdLogicVector n47 8 2 i11 Y key_exp_one_round3 Round 1 2 25800 8400 25800 5400 0 
+hades.signals.SignalStdLogicVector n15 32 2 key_exp_one_round2 Wo0 key_exp_one_round3 Wi0 1 2 24000 4800 25800 4800 0 
+hades.signals.SignalStdLogicVector n46 8 2 i10 Y key_exp_one_round2 Round 1 2 19200 8400 19200 5400 0 
+hades.signals.SignalStdLogicVector n14 32 2 key_exp_one_round2 Wo1 key_exp_one_round3 Wi1 1 2 24000 4200 25800 4200 0 
+hades.signals.SignalStdLogicVector n45 8 2 i9 Y key_exp_one_round1 Round 1 2 12600 8400 12600 5400 0 
+hades.signals.SignalStdLogicVector n13 32 2 key_exp_one_round2 Wo2 key_exp_one_round3 Wi2 1 2 24000 3600 25800 3600 0 
+hades.signals.SignalStdLogicVector n44 8 2 i8 Y key_exp_one_round Round 1 2 4800 8400 5400 5400 0 
+hades.signals.SignalStdLogicVector n12 32 2 key_exp_one_round2 Wo3 key_exp_one_round3 Wi3 1 2 24000 3000 25800 3000 0 
+hades.signals.SignalStdLogicVector n11 32 2 key_exp_one_round1 Wo0 key_exp_one_round2 Wi0 1 2 17400 4800 19200 4800 0 
+hades.signals.SignalStdLogicVector n43 32 2 key_exp_one_round9 Wo0 i7 A 1 2 70200 4800 73200 6000 0 
+hades.signals.SignalStdLogicVector n42 32 2 key_exp_one_round9 Wo1 i6 A 1 2 70200 4200 73200 4800 0 
+hades.signals.SignalStdLogicVector n10 32 2 key_exp_one_round3 Wo3 key_exp_one_round4 Wi3 1 2 30600 3000 32400 3000 0 
+hades.signals.SignalStdLogicVector n41 32 2 key_exp_one_round9 Wo2 i5 A 1 2 70200 3600 73200 3600 0 
+hades.signals.SignalStdLogicVector n40 32 2 key_exp_one_round9 Wo3 i4 A 1 2 70200 3000 73200 2400 0 
+[end signals]
+[end]

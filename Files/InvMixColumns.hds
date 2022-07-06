@@ -1,0 +1,28 @@
+# hades.models.Design file
+#  
+[name] InvMixColumns
+[components]
+hades.models.rtlib.io.OpinVectorLarge Wo3 34800 8400 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo2 34800 10200 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Wi3 25200 8400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo1 34800 12000 @N 1001 32 1.0E-9 1
+hades.models.Design InvMixCol 27600 7800 @N 1001 $TO_BE_REPLACED$InvMixCol.hds
+hades.models.rtlib.io.IpinVectorLarge Wi2 25200 10200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo0 34800 13800 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Wi1 25200 12000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Wi0 25200 13800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.Design InvMixCol3 27600 13200 @N 1001 $TO_BE_REPLACED$InvMixCol.hds
+hades.models.Design InvMixCol2 27600 11400 @N 1001 $TO_BE_REPLACED$InvMixCol.hds
+hades.models.Design InvMixCol1 27600 9600 @N 1001 $TO_BE_REPLACED$InvMixCol.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n7 32 2 InvMixCol Wo Wo3 A 1 2 32400 8400 34800 8400 0 
+hades.signals.SignalStdLogicVector n6 32 2 InvMixCol1 Wo Wo2 A 1 2 32400 10200 34800 10200 0 
+hades.signals.SignalStdLogicVector n5 32 2 InvMixCol2 Wo Wo1 A 1 2 32400 12000 34800 12000 0 
+hades.signals.SignalStdLogicVector n4 32 2 InvMixCol3 Wo Wo0 A 1 2 32400 13800 34800 13800 0 
+hades.signals.SignalStdLogicVector n3 32 2 Wi3 Y InvMixCol Win 1 2 25200 8400 27600 8400 0 
+hades.signals.SignalStdLogicVector n2 32 2 Wi2 Y InvMixCol1 Win 1 2 25200 10200 27600 10200 0 
+hades.signals.SignalStdLogicVector n1 32 2 Wi1 Y InvMixCol2 Win 1 2 25200 12000 27600 12000 0 
+hades.signals.SignalStdLogicVector n0 32 2 Wi0 Y InvMixCol3 Win 1 2 25200 13800 27600 13800 0 
+[end signals]
+[end]

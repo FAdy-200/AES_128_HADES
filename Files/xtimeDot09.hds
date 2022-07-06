@@ -1,0 +1,19 @@
+# hades.models.Design file
+#  
+[name] INdot09
+[components]
+hades.models.rtlib.logic.BitwiseXor i0 28800 12600 @N 1001 8 UUUUUUUU_B 1.0E-8
+hades.models.Design unnamed2 40200 9600 @N 1001 $TO_BE_REPLACED$xtime.hds
+hades.models.Design unnamed 27600 9600 @N 1001 $TO_BE_REPLACED$xtime.hds
+hades.models.Design unnamed1 34800 9600 @N 1001 $TO_BE_REPLACED$xtime.hds
+hades.models.rtlib.io.OpinVector xtime\u0028IN\u0029xorIN 37800 16200 @N 1001 8 1.0E-9 1
+hades.models.rtlib.io.IpinVector In 24000 10800 @N 1001 8 UUUUUUUU_B 1.0E-9 1
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n4 8 2 unnamed2 xtime(in) i0 B 4 2 45000 10200 45600 10200 2 45600 10200 45600 11400 2 45600 11400 31200 11400 2 31200 11400 31200 12600 0 
+hades.signals.SignalStdLogicVector n3 8 2 unnamed1 xtime(in) unnamed2 in 1 2 39600 10200 40200 10200 0 
+hades.signals.SignalStdLogicVector n2 8 2 i0 Y xtime(IN)xorIN A 2 2 30600 14400 30600 16200 2 30600 16200 37800 16200 0 
+hades.signals.SignalStdLogicVector n1 8 3 In Y unnamed in i0 A 7 2 24000 10800 27000 10800 2 27000 10800 27000 10200 2 27000 10200 27600 10200 2 24000 10800 27000 10800 2 27000 10800 27000 12000 2 27000 12000 30000 12000 2 30000 12000 30000 12600 2 27000 10800 24000 10800 
+hades.signals.SignalStdLogicVector n0 8 2 unnamed xtime(in) unnamed1 in 1 2 32400 10200 34800 10200 0 
+[end signals]
+[end]

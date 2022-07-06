@@ -1,0 +1,33 @@
+# hades.models.Design file
+#  
+[name] Sbox
+[components]
+hades.models.io.Gnd i5 12600 1200 @N 1001
+hades.models.rtlib.io.OpinVector o 30000 10200 @N 1001 8 1.0E-9 1
+hades.models.rtlib.io.ExpanderVertical i4 10800 6600 @N 1001 8 1.0E-8
+hades.models.rtlib.io.MergeBits i3 22800 7200 @N 1001 8 1.0E-8
+hades.models.rtl.ROM_256x8 i0 17400 3000 @N 1001 $TO_BE_REPLACED$s_box.rom
+hades.models.rtlib.io.IpinVector i 7800 9600 @N 1001 8 UUUUUUUU_B 1.0E-9 1
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 8 2 i Y i4 A 1 2 7800 9600 11400 6600 0 
+hades.signals.SignalStdLogicVector n8 8 2 i3 Y o A 1 2 23400 8400 30000 10200 0 
+hades.signals.SignalStdLogic1164 n7 2 i0 Y0 i3 A0 1 2 21000 10200 27600 7200 0 
+hades.signals.SignalStdLogic1164 n6 2 i0 Y1 i3 A1 1 2 21000 9600 27000 7200 0 
+hades.signals.SignalStdLogic1164 n5 2 i0 Y2 i3 A2 1 2 21000 9000 26400 7200 0 
+hades.signals.SignalStdLogic1164 n4 2 i0 Y3 i3 A3 1 2 21000 8400 25800 7200 0 
+hades.signals.SignalStdLogic1164 n18 3 i5 GND i0 nCS i0 nOE 2 2 12600 1200 17400 4200 2 12600 1200 17400 3600 1 12600 1200 
+hades.signals.SignalStdLogic1164 n3 2 i0 Y4 i3 A4 1 2 21000 7800 25200 7200 0 
+hades.signals.SignalStdLogic1164 n17 2 i4 Y0 i0 A0 1 2 12000 11400 17400 11400 0 
+hades.signals.SignalStdLogic1164 n2 2 i0 Y5 i3 A5 1 2 21000 7200 24600 7200 0 
+hades.signals.SignalStdLogic1164 n16 2 i4 Y1 i0 A1 1 2 12000 10800 17400 10800 0 
+hades.signals.SignalStdLogic1164 n1 2 i0 Y6 i3 A6 1 2 21000 6600 24000 7200 0 
+hades.signals.SignalStdLogic1164 n15 2 i4 Y2 i0 A2 1 2 12000 10200 17400 10200 0 
+hades.signals.SignalStdLogic1164 n0 2 i0 Y7 i3 A7 1 2 21000 6000 23400 7200 0 
+hades.signals.SignalStdLogic1164 n14 2 i4 Y3 i0 A3 1 2 12000 9600 17400 9600 0 
+hades.signals.SignalStdLogic1164 n13 2 i4 Y4 i0 A4 1 2 12000 9000 17400 9000 0 
+hades.signals.SignalStdLogic1164 n12 2 i4 Y5 i0 A5 1 2 12000 8400 17400 8400 0 
+hades.signals.SignalStdLogic1164 n11 2 i4 Y6 i0 A6 1 2 12000 7800 17400 7800 0 
+hades.signals.SignalStdLogic1164 n10 2 i4 Y7 i0 A7 1 2 12000 7200 17400 7200 0 
+[end signals]
+[end]

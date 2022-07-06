@@ -1,0 +1,52 @@
+# hades.models.Design file
+#  
+[name] EncSingleRound
+[components]
+hades.models.Design MixColumns 44400 7200 @N 1001 $TO_BE_REPLACED$MixColumns.hds
+hades.models.Design Sbox32x4 32400 7200 @N 1001 $TO_BE_REPLACED$Sbox32x4.hds
+hades.models.Design unnamed2 36600 18600 @N 1001 $TO_BE_REPLACED$under_work_mix_col.hds
+hades.models.Design ShiftRows 38400 7200 @N 1001 $TO_BE_REPLACED$ShiftRows.hds
+hades.models.Design unnamed1 24000 19200 @N 1001 $TO_BE_REPLACED$under_work_mix_col.hds
+hades.models.rtlib.io.IpinVectorLarge K3 23400 17400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge K2 23400 19200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge K1 23400 21000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge K0 23400 22800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Wi3 23400 5400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Wi2 23400 7800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo3 61200 5400 @N 1001 32 1.0E-9 1
+hades.models.Design unnamed 24600 18000 @N 1001 $TO_BE_REPLACED$under_work_mix_col.hds
+hades.models.rtlib.io.IpinVectorLarge Wi1 23400 10200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo2 61200 7800 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Wi0 23400 12600 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo1 61200 10200 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Wo0 61200 12600 @N 1001 32 1.0E-9 1
+hades.models.Design AddRound 51600 7200 @N 1001 $TO_BE_REPLACED$AddRound.hds
+hades.models.Design ShiftRow 40800 7200 @N 1001 $TO_BE_REPLACED$ShiftRow.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 32 2 ShiftRows Wo2 MixColumns Wi2 1 2 43200 8400 44400 8400 0 
+hades.signals.SignalStdLogicVector n8 32 2 ShiftRows Wo3 MixColumns Wi3 1 2 43200 7800 44400 7800 0 
+hades.signals.SignalStdLogicVector n7 32 2 Wi0 Y Sbox32x4 Wi0 3 2 23400 12600 30000 12600 2 30000 12600 30000 9600 2 30000 9600 32400 9600 0 
+hades.signals.SignalStdLogicVector n6 32 2 Wi1 Y Sbox32x4 Wi1 3 2 23400 10200 29400 10200 2 29400 10200 29400 9000 2 29400 9000 32400 9000 0 
+hades.signals.SignalStdLogicVector n19 32 2 K0 Y AddRound K0 3 2 23400 22800 51000 22800 2 51000 22800 51000 12000 2 51000 12000 51600 12000 0 
+hades.signals.SignalStdLogicVector n5 32 2 Wi2 Y Sbox32x4 Wi2 3 2 23400 7800 29400 7800 2 29400 7800 29400 8400 2 29400 8400 32400 8400 0 
+hades.signals.SignalStdLogicVector n18 32 2 K1 Y AddRound K1 3 2 23400 21000 50400 21000 2 50400 21000 50400 11400 2 50400 11400 51600 11400 0 
+hades.signals.SignalStdLogicVector n4 32 2 Wi3 Y Sbox32x4 Wi3 3 2 23400 5400 30000 5400 2 30000 5400 30000 7800 2 30000 7800 32400 7800 0 
+hades.signals.SignalStdLogicVector n17 32 2 K2 Y AddRound K2 3 2 23400 19200 49800 19200 2 49800 19200 49800 10800 2 49800 10800 51600 10800 0 
+hades.signals.SignalStdLogicVector n3 32 2 Sbox32x4 Wo0 ShiftRows W0 1 2 37200 9600 38400 9600 0 
+hades.signals.SignalStdLogicVector n16 32 2 K3 Y AddRound K3 3 2 23400 17400 49200 17400 2 49200 17400 49200 10200 2 49200 10200 51600 10200 0 
+hades.signals.SignalStdLogicVector n2 32 2 Sbox32x4 Wo1 ShiftRows W1 1 2 37200 9000 38400 9000 0 
+hades.signals.SignalStdLogicVector n1 32 2 Sbox32x4 Wo2 ShiftRows W2 1 2 37200 8400 38400 8400 0 
+hades.signals.SignalStdLogicVector n15 32 2 MixColumns Wo0 AddRound W0 1 2 49200 9600 51600 9600 0 
+hades.signals.SignalStdLogicVector n0 32 2 Sbox32x4 Wo3 ShiftRows W3 1 2 37200 7800 38400 7800 0 
+hades.signals.SignalStdLogicVector n14 32 2 MixColumns Wo1 AddRound W1 1 2 49200 9000 51600 9000 0 
+hades.signals.SignalStdLogicVector n13 32 2 MixColumns Wo2 AddRound W2 1 2 49200 8400 51600 8400 0 
+hades.signals.SignalStdLogicVector n12 32 2 MixColumns Wo3 AddRound W3 1 2 49200 7800 51600 7800 0 
+hades.signals.SignalStdLogicVector n11 32 2 ShiftRows Wo0 MixColumns Wi0 1 2 43200 9600 44400 9600 0 
+hades.signals.SignalStdLogicVector n10 32 2 ShiftRows Wo1 MixColumns Wi1 1 2 43200 9000 44400 9000 0 
+hades.signals.SignalStdLogicVector n23 32 2 AddRound WO0 Wo0 A 3 2 56400 9600 58200 9600 2 58200 9600 58200 12600 2 58200 12600 61200 12600 0 
+hades.signals.SignalStdLogicVector n22 32 2 AddRound W01 Wo1 A 3 2 56400 9000 58800 9000 2 58800 9000 58800 10200 2 58800 10200 61200 10200 0 
+hades.signals.SignalStdLogicVector n21 32 2 AddRound W02 Wo2 A 3 2 56400 8400 58800 8400 2 58800 8400 58800 7800 2 58800 7800 61200 7800 0 
+hades.signals.SignalStdLogicVector n20 32 2 AddRound WO3 Wo3 A 3 2 56400 7800 58200 7800 2 58200 7800 58200 5400 2 58200 5400 61200 5400 0 
+[end signals]
+[end]

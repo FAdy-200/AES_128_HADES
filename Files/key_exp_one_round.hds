@@ -1,0 +1,40 @@
+# hades.models.Design file
+#  
+[name] key_exp_one_round
+[components]
+hades.models.rtlib.io.IpinVectorLarge Ki3 20400 5400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8 1
+hades.models.rtlib.io.IpinVector Round 11400 15000 @N 1001 8 UUUUUUUU_B 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Ki2 20400 7800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8 1
+hades.models.rtlib.io.IpinVectorLarge Ki1 20400 10200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8 1
+hades.models.rtlib.io.OpinVectorLarge Ko3 35400 5400 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.IpinVectorLarge Ki0 20400 12600 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8 1
+hades.models.rtlib.io.OpinVectorLarge Ko2 35400 7800 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Ko1 35400 10200 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.OpinVectorLarge Ko0 35400 12600 @N 1001 32 1.0E-9 1
+hades.models.rtlib.io.Merge i7 14400 16200 @N 1001 32 8 24 UUUUUUUU000000000000000000000000_B 1.0E-8
+hades.models.rtlib.io.Constant i6 7200 17400 @N 1001 24 000000000000000000000000_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft i5 16800 17400 @N 1001 32 8 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.logic.BitwiseXor i4 26400 18600 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.logic.BitwiseXor i3 26400 15600 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.logic.BitwiseXor i2 26400 12000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.logic.BitwiseXor i1 26400 9000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.logic.BitwiseXor i0 26400 6000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.Design sbox32 16800 20400 @N 1001 $TO_BE_REPLACED$Sbox32.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n9 32 2 i3 Y i4 A 1 2 28200 17400 27600 18600 0 
+hades.signals.SignalStdLogicVector n8 32 2 Ki0 Y i3 B 1 2 20400 12600 28800 15600 0 
+hades.signals.SignalStdLogicVector n7 32 2 i5 Y sbox32 i 1 2 16800 19200 16800 21000 0 
+hades.signals.SignalStdLogicVector n6 32 3 i1 Y i0 B Ko2 A 2 2 28200 10800 28800 6000 2 28200 10800 35400 7800 1 28200 10800 
+hades.signals.SignalStdLogicVector n5 32 2 i0 Y Ko3 A 1 2 28200 7800 35400 5400 0 
+hades.signals.SignalStdLogicVector n4 32 3 Ki3 Y i0 A i5 A 2 2 20400 5400 27600 6000 2 20400 5400 16800 17400 1 20400 5400 
+hades.signals.SignalStdLogicVector n3 32 3 i2 Y i1 B Ko1 A 2 2 28200 13800 28800 9000 2 28200 13800 35400 10200 1 28200 13800 
+hades.signals.SignalStdLogicVector n2 32 2 Ki2 Y i1 A 1 2 20400 7800 27600 9000 0 
+hades.signals.SignalStdLogicVector n1 32 3 i4 Y i2 B Ko0 A 2 2 28200 20400 28800 12000 2 28200 20400 35400 12600 1 28200 20400 
+hades.signals.SignalStdLogicVector n13 32 2 i7 Y i4 B 1 2 14400 16800 28800 18600 0 
+hades.signals.SignalStdLogicVector n0 32 2 Ki1 Y i2 A 1 2 20400 10200 27600 12000 0 
+hades.signals.SignalStdLogicVector n12 24 2 i6 Y i7 B 1 2 9000 19200 15000 16200 0 
+hades.signals.SignalStdLogicVector n11 32 2 sbox32 o i3 A 1 2 21600 21000 27600 15600 0 
+hades.signals.SignalStdLogicVector n10 8 2 Round Y i7 A 1 2 11400 15000 13800 16200 0 
+[end signals]
+[end]
