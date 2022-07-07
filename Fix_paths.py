@@ -25,4 +25,4 @@ def fixPaths(files_path: str) -> None:
 
 
 if __name__ == "__main__":
-    fixPaths("test")
+    fixPaths("Files")
