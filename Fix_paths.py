@@ -18,11 +18,11 @@ def fixPaths(files_path: str) -> None:
     for file in files_list:
         with open(file, "r+", encoding='utf8') as f:
             data = f.read()
-            path = os.path.abspath(files_path) + "\\"
+            path = os.path.join(os.path.abspath(files_path), "")
             new_data = data.replace(pattern, path)
             f.seek(0)
             f.write(new_data)
 
 
 if __name__ == "__main__":
-    fixPaths("Files")
+    fixPaths("test")
